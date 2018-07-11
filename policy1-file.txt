@@ -1,0 +1,13 @@
+// This file controls privileges for networking and I/O operations
+grant {
+	permission java.net.SocketPermission ":0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "127.0.0.1:0-", "connect,resolve,accept";
+    permission java.net.SocketPermission "localhost:0-", "listen,connect,resolve,accept";
+    permission java.io.FilePermission "imagenames.properties", "read";
+    permission java.util.PropertyPermission "java.rmi.server.hostname", "write";
+};
+
+
+
+
+
